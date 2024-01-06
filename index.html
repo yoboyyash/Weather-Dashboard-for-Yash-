@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Yash</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Weather Dashboard</h1>
+    <h1 class="bg-blue-500 text-6xl text-center fondt-bold py-4">Weather Dashboard</h1>
     <div class="container">
         <div class="weather-input">
             
             <h3>Enter a City Name</h3>
 
-            <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+            <form>
+                <input class="city-input" type="text" placeholder="Ex. New York, London, Tokyo">
 
-            <button type="submit" class="search-btn" >Search</button>
+                <button type="submit" class="search-btn">Search</button>
+
+            </form>
 
             <div class="separator"></div>
             
