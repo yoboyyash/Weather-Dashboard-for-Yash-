@@ -3,7 +3,7 @@
 
 ## Showing you a 5 day forecast!
 
-![Alt text](./Screenshot%202024-01-03%20191756.png)
+![Alt text](./)
 
 HOW TO USE: Load up this fire app and enter the city you would like to see the current weather and it's five days of forecast. 
 
