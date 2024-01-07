@@ -13,13 +13,13 @@
             
             <h3 class="text-4xl font-semibold py-2 ">Enter a City Name</h3>
 
-            <form class="flex">
+            <div class="flex">
                 
-                <input class="city-input flex border-2 border-black px-12" type="text" placeholder="Ex. Houston, New York, London">
+                <input class="city-input flex border-2 border-black px-12" type="text" placeholder="Ex. Houston, New York, London" spellcheck="true">
 
                 <button type="submit" class="search-btn border-2 border-black py-1 px-4">Search</button>
 
-            </form>
+            </div>
             
             <div class="citySearchList text-2xl my-6">City Search History</div>
 
@@ -34,48 +34,50 @@
             </div>
 
         </div>
-        <div class="weather-data">
+        <div class="weather-data flex">
             <div class="current-weather">
                 <div class="details">
-                    <h2></h2>
-                    <h4>Temperature: °C</h4>
-                    <h4>Wind: M/S</h4>
-                    <h4>Humidity: %</h4>
+                    <h1 id="weather-icon"></h1>
+                    <h2 id="city-name"></h2>
+                    <h4 id="date"></h4>
+                    <h4 id="temp">Temperature: °C</h4>
+                    <h4 id="wind">Wind: M/S</h4>
+                    <h4 id="humidity">Humidity: %</h4>
                 </div>
              
             </div>
-            <div class="days-forecast">
-                <h2>5-Day Forecast</h2>
+            <div class="days-forecast flex-wrap">
+                <h2 class="text-4xl">5-Day Forecast</h2>
                 <ul class="weather-cards">
                     <li class="card">
                         <h3></h3>
-                        <h4>Temperature: °C</h4>
-                        <h4>Wind: M/S</h4>
-                        <h4>Humidity: %</h4>
+                        <h4 id="temp1">Temperature: °C</h4>
+                        <h4 id="wind1">Wind: M/S</h4>
+                        <h4 id="humidity1">Humidity: %</h4>
                     </li>
                     <li class="card">
                         <h3></h3>
-                        <h4>Temperature: °C</h4>
-                        <h4>Wind: M/S</h4>
-                        <h4>Humidity: %</h4>
+                        <h4 id="temp2">Temperature: °C</h4>
+                        <h4 id="wind2">Wind: M/S</h4>
+                        <h4 id="humidity2">Humidity: %</h4>
                     </li>
                     <li class="card">
                         <h3></h3>
-                        <h4>Temperature: °C</h4>
-                        <h4>Wind: M/S</h4>
-                        <h4>Humidity: %</h4>
+                        <h4 id="temp3">Temperature: °C</h4>
+                        <h4 id="wind3">Wind: M/S</h4>
+                        <h4 id="humidity3">Humidity: %</h4>
                     </li>
                     <li class="card">
                         <h3></h3>
-                        <h4>Temperature: °C</h4>
-                        <h4>Wind: M/S</h4>
-                        <h4>Humidity: %</h4>
+                        <h4 id="temp4">Temperature: °C</h4>
+                        <h4 id="wind4">Wind: M/S</h4>
+                        <h4 id="humidity4">Humidity: %</h4>
                     </li>
                     <li class="card">
                         <h3></h3>
-                        <h4>Temperature: °C</h4>
-                        <h4>Wind: M/S</h4>
-                        <h4>Humidity: %</h4>
+                        <h4 id="temp5">Temperature: °C</h4>
+                        <h4 id="wind5">Wind: M/S</h4>
+                        <h4 id="humidity5">Humidity: %</h4>
                     </li>
                 </ul>
             </div>
