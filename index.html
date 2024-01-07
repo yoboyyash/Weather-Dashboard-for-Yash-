@@ -7,83 +7,80 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="bg-blue-500 text-9xl text-center font-bold py-4">Weather Dashboard</h1>
-    <div>
-        <div class="weather-input">
-            
-            <h3 class="text-4xl font-semibold py-2 ">Enter a City Name</h3>
+    <h1 class="bg-blue-500 text-8xl text-center font-bold py-4">Weather Dashboard</h1>
+    <h1 class="bg-blue-200 text-4xl font-semibold py-6 text-center ">Enter a City Name</h1>
+    <section class="flex justify-center">
+        
+        <input class="city-input flex border-2 border-black px-12" type="text" placeholder="Ex. Houston, New York, London" spellcheck="true">
 
-            <div class="flex">
-                
-                <input class="city-input flex border-2 border-black px-12" type="text" placeholder="Ex. Houston, New York, London" spellcheck="true">
+        <button type="submit" class="search-btn border-2 border-black py-1 px-4">Search</button>
 
-                <button type="submit" class="search-btn border-2 border-black py-1 px-4">Search</button>
+    </section>
 
-            </div>
-            
-            <div class="citySearchList text-2xl my-6">City Search History</div>
 
-            <div> 
-                <ul class="cityListContainer">
-                    <!-- 
-                    <li>City 1</li>
-                    <li>City 1</li>
-                    <li>City 1</li> 
-                    -->
-                </ul>
-            </div>
-
+    <section class="flex justify-center text-lg">
+        
+        <div class="text-center space-y-4">
+            <h1 id="weather-icon"></h1>
+            <h2 id="city-name" class="text-2xl"><br></h2>
+            <h4 id="date"></h4>
+            <h4 id="temp">Temperature: °C</h4>
+            <h4 id="wind">Wind: M/S</h4>
+            <h4 id="humidity">Humidity: %</h4>
         </div>
-        <div class="weather-data flex">
-            <div class="current-weather">
-                <div class="details">
-                    <h1 id="weather-icon"></h1>
-                    <h2 id="city-name"></h2>
-                    <h4 id="date"></h4>
-                    <h4 id="temp">Temperature: °C</h4>
-                    <h4 id="wind">Wind: M/S</h4>
-                    <h4 id="humidity">Humidity: %</h4>
-                </div>
              
-            </div>
-            <div class="days-forecast flex-wrap">
-                <h2 class="text-4xl">5-Day Forecast</h2>
-                <ul class="weather-cards">
-                    <li class="card">
-                        <h3></h3>
-                        <h4 id="temp1">Temperature: °C</h4>
-                        <h4 id="wind1">Wind: M/S</h4>
-                        <h4 id="humidity1">Humidity: %</h4>
-                    </li>
-                    <li class="card">
-                        <h3></h3>
-                        <h4 id="temp2">Temperature: °C</h4>
-                        <h4 id="wind2">Wind: M/S</h4>
-                        <h4 id="humidity2">Humidity: %</h4>
-                    </li>
-                    <li class="card">
-                        <h3></h3>
-                        <h4 id="temp3">Temperature: °C</h4>
-                        <h4 id="wind3">Wind: M/S</h4>
-                        <h4 id="humidity3">Humidity: %</h4>
-                    </li>
-                    <li class="card">
-                        <h3></h3>
-                        <h4 id="temp4">Temperature: °C</h4>
-                        <h4 id="wind4">Wind: M/S</h4>
-                        <h4 id="humidity4">Humidity: %</h4>
-                    </li>
-                    <li class="card">
-                        <h3></h3>
-                        <h4 id="temp5">Temperature: °C</h4>
-                        <h4 id="wind5">Wind: M/S</h4>
-                        <h4 id="humidity5">Humidity: %</h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    </section>
 
-    </div>
+    <h2 class="text-6xl flex justify-center py-5">5-Day Forecast</h2>
+            
+    <section class="days-forecast flex justify-center space-x-5 ">
+                
+        <div class="card">
+            <h1 id="weather-icon1"></h1>
+            <h4 id="temp1">Temperature: °C</h4>
+            <h4 id="wind1">Wind: M/S</h4>
+            <h4 id="humidity1">Humidity: %</h4>
+        </div>
+        <div class="card">
+            <h1 id="weather-icon2"></h1>
+            <h4 id="temp2">Temperature: °C</h4>
+            <h4 id="wind2">Wind: M/S</h4>
+            <h4 id="humidity2">Humidity: %</h4>
+        </div>
+        <div class="card">
+            <h1 id="weather-icon3"></h1>
+            <h4 id="temp3">Temperature: °C</h4>
+            <h4 id="wind3">Wind: M/S</h4>
+            <h4 id="humidity3">Humidity: %</h4>
+        </div>
+        <div class="card">
+            <h1 id="weather-icon4"></h1>
+            <h4 id="temp4">Temperature: °C</h4>
+            <h4 id="wind4">Wind: M/S</h4>
+            <h4 id="humidity4">Humidity: %</h4>
+        </div>
+        <div class="card">
+            <h1 id="weather-icon5"></h1>
+            <h4 id="temp5">Temperature: °C</h4>
+            <h4 id="wind5">Wind: M/S</h4>
+            <h4 id="humidity5">Humidity: %</h4>
+        </div>
+               
+            
+            
+            
+    </section>
+    <section> 
+        <div class="citySearchdivst text-2xl my-6">City Search History</div>
+        <ul class="citydivstContainer">
+            <!-- 
+            <div>City 1</div>
+            <div>City 1</div>
+            <div>City 1</div> 
+            -->
+        </ul>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
